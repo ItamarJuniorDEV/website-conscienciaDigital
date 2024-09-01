@@ -11,14 +11,22 @@ body {
 .navbar {
     background-color: #ffffff; /* Fundo branco para a navbar */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    padding: 10px 0;
+    padding: 0.5rem 1rem; /* Ajustando o padding para reduzir a altura do header */
     transition: background-color 0.3s ease;
 }
 
+/* Ajustando o posicionamento do nome da marca "Inclusão Digital" */
 .navbar-brand {
     font-weight: bold;
     color: #007bff !important;
     font-size: 1.5rem;
+    margin-left: -200px; /* Ajusta o deslocamento para mover o texto 4cm (~40px) mais à esquerda */
+}
+
+/* Centralizando o navbar */
+.navbar-nav {
+    margin-left: auto; /* Centraliza o menu */
+    margin-right: auto; /* Centraliza o menu */
 }
 
 .navbar-nav .nav-link {
@@ -118,6 +126,18 @@ body {
     border-radius: 10px;
 }
 
+.card-title {
+    font-size: 1.25rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
 /* Botões */
 .btn-custom {
     background-color: #007bff;
@@ -158,6 +178,13 @@ footer {
     max-height: 30px; 
     overflow: hidden; 
     line-height: 0; 
+}
+
+@media (max-width: 768px) {
+    footer {
+        font-size: 0.9rem; /* Reduz o tamanho da fonte em telas menores */
+        padding: 10px 0; /* Aumenta o padding vertical para evitar quebras de linha apertadas */
+    }
 }
 
 footer p {
@@ -201,13 +228,15 @@ footer p {
         font-size: 1.5rem;
     }
 }
+
 #quiz-progress {
     color: #333; /* Cor escura para tornar o texto visível */
 }
+
 /* Linha divisória */
 .section-divider {
     border-top: 2px solid #eaeaea; /* Cor da linha divisória */
-    margin: 30px 0; /* Espaçamento acima e abaixo da linha */
+    margin: 10px 0; /* Espaçamento acima e abaixo da linha */
 }
 
 /* Estilos para o nome da pessoa nos comentários */

@@ -1,32 +1,29 @@
 /* Estilos Gerais */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #ffffff; /* Fundo branco para todo o site */
-    color: #333; /* Cor padrão do texto */
+    background-color: #ffffff;
+    color: #333;
     margin-top: 70px;
     line-height: 1.8;
 }
 
 /* Navbar */
 .navbar {
-    background-color: #ffffff; /* Fundo branco para a navbar */
+    background-color: #ffffff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    padding: 0.5rem 1rem; /* Ajustando o padding para reduzir a altura do header */
+    padding: 0.5rem 1rem;
     transition: background-color 0.3s ease;
 }
 
-/* Ajustando o posicionamento do nome da marca "Inclusão Digital" */
 .navbar-brand {
     font-weight: bold;
     color: #007bff !important;
     font-size: 1.5rem;
-    margin-left: -200px; /* Ajusta o deslocamento para mover o texto 4cm (~40px) mais à esquerda */
 }
 
-/* Centralizando o navbar */
 .navbar-nav {
-    margin-left: auto; /* Centraliza o menu */
-    margin-right: auto; /* Centraliza o menu */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .navbar-nav .nav-link {
@@ -34,6 +31,7 @@ body {
     font-weight: 500;
     padding: 8px 20px;
     font-size: 1rem;
+    transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
@@ -50,6 +48,7 @@ body {
     color: #fff;
     text-align: left;
     padding: 120px 0;
+    transition: all 0.5s ease;
 }
 
 .jumbotron .overlay {
@@ -64,6 +63,11 @@ body {
 .jumbotron .container {
     position: relative;
     z-index: 2;
+    transition: transform 0.5s ease;
+}
+
+.jumbotron:hover .container {
+    transform: scale(1.05);
 }
 
 .jumbotron .lead {
@@ -72,35 +76,33 @@ body {
 
 /* Seções */
 .section {
-    padding: 60px 0; /* Espaçamento adequado entre seções */
+    padding: 60px 0;
 }
 
 .section-bg-light {
-    background-color: #f8f9fa; /* Fundo cinza claro para suavidade */
+    background-color: #f8f9fa;
     border-top: 2px solid #eaeaea;
     padding: 40px;
 }
 
 .section-bg-dark {
-    background-color: #f8f9fa; /* Fundo cinza claro para suavidade */
-    color: #333; /* Texto escuro para contraste */
+    background-color: #f8f9fa;
+    color: #333;
     padding: 60px 0;
 }
 
-/* Ajuste de cor do texto para visibilidade */
 .section-bg-dark p,
 .section-bg-dark h2,
 .section-bg-dark h3 {
-    color: #333 !important; /* Cor de texto mais escura para maior contraste */
+    color: #333 !important;
 }
 
-/* Ajuste para o Quiz e Comentários */
 #quiz p,
 #quiz h2,
 #quiz h3,
 #comentarios p,
 #comentarios h2 {
-    color: #1a1a1a; /* Azul escuro ou cinza escuro para contraste melhor */
+    color: #1a1a1a;
 }
 
 /* Estilo dos Títulos das Seções */
@@ -110,6 +112,11 @@ body {
     color: #007bff;
     margin-bottom: 30px;
     font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+.section-title:hover {
+    color: #0056b3;
 }
 
 /* Cards */
@@ -118,7 +125,13 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
-    background-color: #ffffff; /* Fundo branco para os cards */
+    background-color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card-body {
@@ -154,6 +167,75 @@ body {
     background-color: #0056b3;
 }
 
+/* Estilos do Quiz */
+.quiz-container {
+    background-color: #f8f9fa; /* Fundo claro para contraste com texto */
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    max-width: 800px;
+    margin: auto;
+}
+
+#quiz-container h3 {
+    color: #007bff; /* Cor azul para o título da pergunta */
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#quiz-container button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 12px 20px;
+    margin: 10px 0;
+    width: 100%; /* Botões ocupam toda a largura do container */
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Adiciona transição suave */
+    font-family: 'Poppins', sans-serif;
+}
+
+#quiz-container button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+}
+
+#quiz-progress {
+    color: #333;
+    margin-top: 20px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Botão de início do Quiz */
+.btn-custom {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Adiciona transição suave */
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+}
+
+/* Resultados do Quiz */
+#quiz-results {
+    background-color: #e9ecef; /* Fundo claro para resultados */
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    color: #333;
+    font-weight: 500;
+}
+
 /* Legenda do Mapa */
 .legend-box {
     display: inline-block;
@@ -182,13 +264,27 @@ footer {
 
 @media (max-width: 768px) {
     footer {
-        font-size: 0.9rem; /* Reduz o tamanho da fonte em telas menores */
-        padding: 10px 0; /* Aumenta o padding vertical para evitar quebras de linha apertadas */
+        font-size: 0.9rem;
+        padding: 10px 0;
+    }
+
+    #quiz-container {
+        padding: 20px;
+    }
+
+    #quiz-container button {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+
+    .btn-custom {
+        padding: 10px 20px;
+        font-size: 1rem;
     }
 }
 
 footer p {
-    color: #ffffff !important; /* Cor branca para o texto do footer */
+    color: #ffffff !important;
 }
 
 /* Formulários */
@@ -202,6 +298,12 @@ footer p {
     border-radius: 5px;
     padding: 10px;
     border: 1px solid #ddd;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
 }
 
 /* Responsividade */
@@ -230,18 +332,18 @@ footer p {
 }
 
 #quiz-progress {
-    color: #333; /* Cor escura para tornar o texto visível */
+    color: #333;
 }
 
 /* Linha divisória */
 .section-divider {
-    border-top: 2px solid #eaeaea; /* Cor da linha divisória */
-    margin: 10px 0; /* Espaçamento acima e abaixo da linha */
+    border-top: 2px solid #eaeaea;
+    margin: 10px 0;
 }
 
 /* Estilos para o nome da pessoa nos comentários */
 .comment-author {
-    color: #333; /* Escolha uma cor escura para contraste, como cinza escuro */
-    font-weight: bold; /* Deixe o texto em negrito para destaque */
-    margin-bottom: 5px; /* Espaçamento abaixo do nome */
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
 }

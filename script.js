@@ -6,13 +6,7 @@ function startQuiz() {
         { question: "Como a inclusão digital impacta a educação?", choices: ["Facilitando o acesso a recursos educacionais online", "Melhorando a infraestrutura escolar", "Aumentando o número de escolas físicas", "Reduzindo o número de professores"], answer: 0 },
         { question: "Qual é o papel da telemedicina na inclusão digital?", choices: ["Facilitar o acesso a cuidados de saúde", "Construir mais hospitais", "Aumentar o número de médicos", "Promover campanhas de saúde"], answer: 0 },
         { question: "Como as parcerias público-privadas ajudam na inclusão digital?", choices: ["Expandindo a infraestrutura digital", "Aumentando impostos", "Reduzindo o número de empresas", "Promovendo monopólios"], answer: 0 },
-        // Adicione mais 15 perguntas relevantes aqui
-        { question: "Quais são os benefícios da inclusão digital na economia?", choices: ["Criação de empregos e inovação", "Redução de impostos", "Aumento da burocracia", "Fechamento de empresas"], answer: 0 },
-        { question: "Qual tecnologia emergente pode melhorar a inclusão digital?", choices: ["5G", "Fax", "Telex", "Telégrafo"], answer: 0 },
-        { question: "Como a falta de infraestrutura afeta a inclusão digital?", choices: ["Limita o acesso à internet", "Aumenta a velocidade da internet", "Gera mais empregos", "Promove a igualdade social"], answer: 0 },
-        { question: "O que é um MOOC?", choices: ["Curso Online Aberto e Massivo", "Conferência Mundial de Médicos", "Organização Mundial de Comércio", "Museu de Computadores"], answer: 0 },
-        { question: "Por que a alfabetização digital é importante?", choices: ["Para utilizar tecnologias de forma crítica e segura", "Para reduzir a alfabetização tradicional", "Para promover a compra de dispositivos caros", "Para reduzir o uso de internet"], answer: 0 },
-        // Continue até completar 20 perguntas
+        // Adicione mais perguntas relevantes aqui
     ];
 
     let currentQuestion = 0;
@@ -24,7 +18,7 @@ function startQuiz() {
         if (currentQuestion < quizData.length) {
             const quizContainer = document.getElementById('quiz-container');
             const q = quizData[questionsOrder[currentQuestion]];
-            document.getElementById('quiz-progress').textContent = `Pergunta ${currentQuestion + 1}/${quizData.length}`;
+            document.getElementById('quiz-progress').textContent = `Pergunta ${currentQuestion + 1} de ${quizData.length}`;
             quizContainer.innerHTML = `
                 <h3>${q.question}</h3>
                 ${q.choices.map((choice, index) => `

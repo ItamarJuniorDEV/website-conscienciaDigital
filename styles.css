@@ -1,0 +1,218 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff; /* Fundo branco para todo o site */
+    color: #333; /* Cor padrão do texto */
+    margin-top: 70px;
+    line-height: 1.8;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff; /* Fundo branco para a navbar */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #007bff !important;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    color: #007bff !important;
+    font-weight: 500;
+    padding: 8px 20px;
+    font-size: 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0056b3 !important;
+}
+
+/* Jumbotron (Banner) */
+.jumbotron {
+    position: relative;
+    margin-bottom: 0;
+    background-image: linear-gradient(135deg, rgba(0, 123, 255, 0.1), rgba(123, 31, 162, 0.1)), url('img/img-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: left;
+    padding: 120px 0;
+}
+
+.jumbotron .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.jumbotron .container {
+    position: relative;
+    z-index: 2;
+}
+
+.jumbotron .lead {
+    color: #e0e0e0;
+}
+
+/* Seções */
+.section {
+    padding: 60px 0; /* Espaçamento adequado entre seções */
+}
+
+.section-bg-light {
+    background-color: #f8f9fa; /* Fundo cinza claro para suavidade */
+    border-top: 2px solid #eaeaea;
+    padding: 40px;
+}
+
+.section-bg-dark {
+    background-color: #f8f9fa; /* Fundo cinza claro para suavidade */
+    color: #333; /* Texto escuro para contraste */
+    padding: 60px 0;
+}
+
+/* Ajuste de cor do texto para visibilidade */
+.section-bg-dark p,
+.section-bg-dark h2,
+.section-bg-dark h3 {
+    color: #333 !important; /* Cor de texto mais escura para maior contraste */
+}
+
+/* Ajuste para o Quiz e Comentários */
+#quiz p,
+#quiz h2,
+#quiz h3,
+#comentarios p,
+#comentarios h2 {
+    color: #1a1a1a; /* Azul escuro ou cinza escuro para contraste melhor */
+}
+
+/* Estilo dos Títulos das Seções */
+.section-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #007bff;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    background-color: #ffffff; /* Fundo branco para os cards */
+}
+
+.card-body {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Botões */
+.btn-custom {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+}
+
+/* Legenda do Mapa */
+.legend-box {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #0056b3 !important;
+    color: #fff; 
+    padding: 4px 0 0 0; 
+    margin: 0; 
+    font-size: 1rem; 
+    text-align: center; 
+    display: flex; 
+    align-items: flex-start; 
+    justify-content: center; 
+    min-height: 20px; 
+    max-height: 30px; 
+    overflow: hidden; 
+    line-height: 0; 
+}
+
+footer p {
+    color: #ffffff !important; /* Cor branca para o texto do footer */
+}
+
+/* Formulários */
+.form-group label {
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-control {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .jumbotron {
+        padding: 80px 0;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
+#quiz-progress {
+    color: #333; /* Cor escura para tornar o texto visível */
+}
+/* Linha divisória */
+.section-divider {
+    border-top: 2px solid #eaeaea; /* Cor da linha divisória */
+    margin: 30px 0; /* Espaçamento acima e abaixo da linha */
+}
+
+/* Estilos para o nome da pessoa nos comentários */
+.comment-author {
+    color: #333; /* Escolha uma cor escura para contraste, como cinza escuro */
+    font-weight: bold; /* Deixe o texto em negrito para destaque */
+    margin-bottom: 5px; /* Espaçamento abaixo do nome */
+}

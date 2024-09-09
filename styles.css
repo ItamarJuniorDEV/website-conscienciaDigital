@@ -1,0 +1,412 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin-top: 70px;
+    line-height: 1.8;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #007bff !important;
+    font-size: 1.5rem;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-nav .nav-link {
+    color: #007bff !important;
+    font-weight: 500;
+    padding: 8px 20px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0056b3 !important;
+}
+
+/* Jumbotron (Banner) */
+.jumbotron {
+    position: relative;
+    margin-bottom: 0;
+    background-image: linear-gradient(135deg, rgba(0, 123, 255, 0.1), rgba(123, 31, 162, 0.1)), url('img/img-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: left;
+    padding: 120px 0;
+    transition: all 0.5s ease;
+}
+
+.jumbotron .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.jumbotron .container {
+    position: relative;
+    z-index: 2;
+    transition: transform 0.5s ease;
+}
+
+.jumbotron:hover .container {
+    transform: scale(1.05);
+}
+
+.jumbotron .lead {
+    color: #e0e0e0;
+}
+
+/* Seções */
+.section {
+    padding: 60px 0;
+}
+
+.section-bg-light {
+    background-color: #f8f9fa;
+    border-top: 2px solid #eaeaea;
+    padding: 40px;
+}
+
+.section-bg-dark {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 60px 0;
+}
+
+.section-bg-dark p,
+.section-bg-dark h2,
+.section-bg-dark h3 {
+    color: #333 !important;
+}
+
+#quiz p,
+#quiz h2,
+#quiz h3,
+#comentarios p,
+#comentarios h2 {
+    color: #1a1a1a;
+}
+
+/* Estilo dos Títulos das Seções */
+.section-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #007bff;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+.section-title:hover {
+    color: #0056b3;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Botões */
+.btn-custom {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos do Quiz */
+.quiz-container {
+    background-color: #f8f9fa; /* Fundo claro para contraste com texto */
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    max-width: 800px;
+    margin: auto;
+}
+
+#quiz-container h3 {
+    color: #007bff; /* Cor azul para o título da pergunta */
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#quiz-container button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 12px 20px;
+    margin: 10px 0;
+    width: 100%; /* Botões ocupam toda a largura do container */
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Adiciona transição suave */
+    font-family: 'Poppins', sans-serif;
+}
+
+#quiz-container button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+}
+
+#quiz-progress {
+    color: #333;
+    margin-top: 20px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Botão de início do Quiz */
+.btn-custom {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Adiciona transição suave */
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+}
+
+/* Resultados do Quiz */
+#quiz-results {
+    background-color: #e9ecef; /* Fundo claro para resultados */
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Legenda do Mapa */
+.legend-box {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #0056b3 !important;
+    color: #fff; 
+    padding: 4px 0 0 0; 
+    margin: 0; 
+    font-size: 1rem; 
+    text-align: center; 
+    display: flex; 
+    align-items: flex-start; 
+    justify-content: center; 
+    min-height: 20px; 
+    max-height: 30px; 
+    overflow: hidden; 
+    line-height: 0; 
+}
+
+@media (max-width: 768px) {
+    footer {
+        font-size: 0.9rem;
+        padding: 10px 0;
+    }
+
+    #quiz-container {
+        padding: 20px;
+    }
+
+    #quiz-container button {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+
+    .btn-custom {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+footer p {
+    color: #ffffff !important;
+}
+
+/* Formulários */
+.form-group label {
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-control {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .jumbotron {
+        padding: 80px 0;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
+
+#quiz-progress {
+    color: #333;
+}
+
+/* Linha divisória */
+.section-divider {
+    border-top: 2px solid #eaeaea;
+    margin: 10px 0;
+}
+
+/* Estilos para o nome da pessoa nos comentários */
+.comment-author {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+/* Casos de Repercussão */
+.section-bg-light {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.section-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #007bff;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.section-divider {
+    border-top: 2px solid #eaeaea;
+    margin: 30px 0;
+}
+
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .order-md-1, .order-md-2 {
+        order: initial;
+    }
+}
+
+.comment{
+    color:#007bff !important;
+}
+/* Ajuste para imagens na seção Casos de Repercussão */
+#casos .img-fluid {
+    width: 100%;
+    height: 100%; /* Faz com que a imagem ocupe 100% da altura */
+    object-fit: cover; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Aplica a mesma borda arredondada dos cartões */
+}

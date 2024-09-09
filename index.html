@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sociedade da Informação: O Caminho para a Inclusão Digital</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Leaflet CSS para o Mapa Interativo -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    
+    <!-- Google Fonts - Poppins e Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Inclusão Digital</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="#quiz">Quiz</a></li>
+                <li class="nav-item"><a class="nav-link" href="#casos">Histórias</a></li>
+                <li class="nav-item"><a class="nav-link" href="#mapa">Mapa Interativo</a></li>
+                <li class="nav-item"><a class="nav-link" href="#graficos">Gráficos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#video">Vídeo</a></li>
+                <li class="nav-item"><a class="nav-link" href="#comentarios">Comentários</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Banner -->
+<header class="jumbotron jumbotron-fluid text-white">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-md-8 col-sm-12 text-left">
+                <h1 class="display-4">Sociedade da Informação</h1>
+                <p class="lead">O Caminho para a Inclusão Digital</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container-fluid">
+    <!-- Seção Sobre -->
+    <section id="sobre" class="section-bg-light text-dark py-5">
+        <div class="container">
+            <h2 class="section-title text-center text-primary mb-4">Sobre o Tema</h2>
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 card-hover">
+                        <div class="card-body">
+                            <h5 class="card-title">Por que a Inclusão Digital é Importante?</h5>
+                            <p class="card-text">No mundo atual, a inclusão digital é essencial para garantir que todos os cidadãos possam acessar serviços fundamentais como educação, saúde e emprego. Com a expansão das tecnologias de informação e comunicação, se torna vital promover o acesso universal e equitativo à internet e aos recursos digitais, garantindo a todos as mesmas oportunidades de desenvolvimento pessoal e profissional.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 card-hover">
+                        <div class="card-body">
+                            <h5 class="card-title">Desafios da Inclusão Digital no Brasil</h5>
+                            <p class="card-text">No Brasil, a inclusão digital enfrenta obstáculos como a desigualdade econômica e social. Muitas pessoas, especialmente em áreas rurais e comunidades de baixa renda, não têm acesso a dispositivos tecnológicos ou à internet de qualidade. Superar essas barreiras requer políticas públicas eficazes e investimentos em infraestrutura digital para expandir o acesso e reduzir as desigualdades.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 card-hover">
+                        <div class="card-body">
+                            <h5 class="card-title">Ações Necessárias para Promover a Inclusão Digital</h5>
+                            <p class="card-text">Para promover a inclusão digital, é necessário investir em infraestrutura, reduzir os custos de acesso e oferecer capacitação digital. Isso inclui expandir a infraestrutura de internet, especialmente em áreas remotas, e promover programas educativos que capacitem a população para o uso eficaz das tecnologias digitais, visando a inclusão de todos os segmentos sociais.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 card-hover">
+                        <div class="card-body">
+                            <h5 class="card-title">O Futuro da Inclusão Digital</h5>
+                            <p class="card-text">Com o avanço contínuo da tecnologia e a digitalização crescente da sociedade, a inclusão digital precisa ser uma prioridade. A inclusão digital vai além de apenas fornecer acesso à internet; envolve garantir que todos tenham a capacidade de utilizar as tecnologias de forma produtiva e crítica, fomentando a cidadania digital e a participação ativa na sociedade.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 card-hover">
+                        <div class="card-body">
+                            <h5 class="card-title">Impacto da Inclusão Digital na Educação</h5>
+                            <p class="card-text">A inclusão digital transforma a educação ao permitir acesso a recursos educacionais online, facilitando a aprendizagem independente e colaborativa. Com o acesso à internet, alunos e professores podem explorar uma vasta gama de ferramentas educativas digitais que complementam e enriquecem o currículo tradicional, ampliando as possibilidades de ensino e aprendizado.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 card-hover">
+                        <div class="card-body">
+                            <h5 class="card-title">Inclusão Digital e Economia</h5>
+                            <p class="card-text">A inclusão digital tem um impacto significativo na economia ao proporcionar novas oportunidades de negócios, comércio eletrônico e empregos remotos. Isso é especialmente importante em regiões com poucas oportunidades econômicas tradicionais, permitindo que mais pessoas participem ativamente da economia digital e se beneficiem das oportunidades de crescimento e inovação.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Linha divisória -->
+    <div class="section-divider"></div>
+
+    <!-- Seção Casos de Repercussão -->
+<section id="casos" class="section-bg-light text-dark py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="section-title text-center text-primary mb-4">Casos de Repercussão Nacional</h2>
+                <p class="text-center mb-4">Aqui estão dois casos, um positivo e um negativo, que repercutiram no Brasil em relação à inclusão digital e o acesso à tecnologia.</p>
+            </div>
+        </div>
+
+        <!-- Caso Positivo -->
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" class="img-fluid rounded shadow" alt="Projeto Alunos Conectados">
+            </div>
+            <div class="col-md-6">
+                <div class="card card-hover h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto Alunos Conectados – MEC</h5>
+                        <p class="card-text">
+                            Durante a pandemia de COVID-19, muitos estudantes de baixa renda enfrentaram dificuldades para acompanhar as aulas remotas devido à falta de acesso à internet. O Ministério da Educação (MEC) lançou o Projeto <strong>Alunos Conectados</strong> em 2020, distribuindo chips de internet móvel para mais de 400 mil estudantes de universidades e institutos federais. Isso permitiu que muitos alunos continuassem seus estudos remotamente, mesmo em áreas com pouca infraestrutura de internet.
+                        </p>
+                        <p class="card-text">
+                            O projeto foi elogiado por sua resposta rápida à exclusão digital, mas também gerou debates sobre a necessidade de ampliar iniciativas como essa para toda a educação pública no Brasil.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Caso Negativo -->
+        <div class="row">
+            <div class="col-md-6 order-md-2">
+                <img src="https://images.unsplash.com/photo-1610204750087-ef0b08eab9f3?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid rounded shadow" alt="Falta de acesso à internet em áreas rurais">
+            </div>
+            <div class="col-md-6 order-md-1">
+                <div class="card card-hover h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Falta de Acesso à Tecnologia em Áreas Rurais</h5>
+                        <p class="card-text">
+                            Durante a pandemia de COVID-19, a falta de acesso à internet nas áreas rurais do Brasil tornou-se um grande desafio para estudantes. Em muitas regiões do Norte e Nordeste, os alunos tiveram que caminhar longas distâncias para acessar redes de celular ou dividir dispositivos com familiares. A falta de infraestrutura de telecomunicações nessas áreas evidenciou a desigualdade de acesso à tecnologia entre áreas urbanas e rurais.
+                        </p>
+                        <p class="card-text">
+                            Este caso repercutiu amplamente nas redes sociais, e o debate sobre a exclusão digital foi intensificado, com muitos exigindo maior investimento em infraestrutura de telecomunicações nessas regiões.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Linha divisória -->
+<div class="section-divider"></div>
+
+    <!-- Seção Quiz -->
+    <section id="quiz" class="section-bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-title text-center">Quiz de Inclusão Social</h2>
+                    <p class="text-center mb-4">Teste seus conhecimentos sobre inclusão digital no Brasil.</p>
+                    <div id="quiz-container" class="quiz-container p-3 rounded shadow">
+                        <!-- Quiz questions will appear here -->
+                    </div>
+                    <div id="quiz-progress" class="mt-2 text-center"></div>
+                    <div class="d-flex justify-content-center mt-3">
+                        <button class="btn btn-primary btn-lg btn-custom" onclick="startQuiz()">Iniciar Quiz</button>
+                    </div>
+                    <div id="quiz-results" class="mt-4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Linha divisória -->
+    <div class="section-divider"></div>
+
+    <!-- Seção Mapa Interativo -->
+    <section id="mapa" class="section-bg-light text-dark py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-title text-center">Mapa Interativo</h2>
+                    <p class="text-center mb-4">Visualize o acesso à internet nas diferentes regiões do Brasil...</p>
+                    <div id="map" style="height: 500px;" class="rounded shadow"></div>
+                    <div class="mt-4 text-center">
+                        <h5>Legenda:</h5>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <span class="legend-box" style="background-color: #00FF00;"></span> Alto Acesso à Internet
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center mt-2">
+                            <span class="legend-box" style="background-color: #FFFF00;"></span> Médio Acesso à Internet
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center mt-2">
+                            <span class="legend-box" style="background-color: #FF0000;"></span> Baixo Acesso à Internet
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Linha divisória -->
+    <div class="section-divider"></div>
+
+    <!-- Seção Gráficos -->
+    <section id="graficos" class="section-bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-title text-center">Gráficos de Inclusão Digital</h2>
+                    <p class="text-center mb-4">Os gráficos abaixo representam dados sobre a inclusão digital no Brasil...</p>
+                    <div class="d-flex justify-content-center">
+                        <canvas id="grafico-inclusao" width="800" height="400" class="rounded shadow"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Linha divisória -->
+    <div class="section-divider"></div>
+
+    <!-- Seção Vídeo -->
+    <section id="video" class="section-bg-light text-dark py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-title text-center">Vídeo Sobre Inclusão Digital</h2>
+                    <p class="text-center mb-4">Assista ao vídeo abaixo para entender melhor a importância da inclusão digital no Brasil...</p>
+                    <div class="d-flex justify-content-center">
+                        <div class="embed-responsive embed-responsive-16by9 rounded shadow" style="max-width: 800px;">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XiWHhZ-31T8" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Linha divisória -->
+    <div class="section-divider"></div>
+
+    <!-- Seção de Comentários -->
+    <section id="comentarios" class="section-bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-title text-center">Comentários</h2>
+                    <p class="text-center mb-4">Deixe seus comentários e sugestões sobre o tema da inclusão digital...</p>
+                    <form id="comentario-form" class="mx-auto" style="max-width: 600px;">
+                        <div class="form-group">
+                            <label for="nome">Nome:</label>
+                            <input type="text" class="form-control" id="nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="comentario">Comentário:</label>
+                            <textarea class="form-control" id="comentario" rows="3" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-custom">Enviar Comentário</button>
+                        </div>
+                    </form>
+                    <div id="comentarios-list" class="mt-4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="section-divider"></div>
+
+<!-- Footer -->
+<footer class="text-center py-4 section-bg-white text-white">
+    <p>© 2024 Sociedade da Informação. Todos os direitos reservados.</p>
+</footer>
+
+<!-- Scripts necessários -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Leaflet JS para Mapa Interativo -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<!-- Chart.js para Gráficos -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- Custom JS -->
+<script src="script.js"></script>
+
+</body>
+</html>

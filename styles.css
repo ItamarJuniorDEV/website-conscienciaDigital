@@ -403,3 +403,10 @@ footer p {
 .comment{
     color:#007bff !important;
 }
+/* Ajuste para imagens na seção Casos de Repercussão */
+#casos .img-fluid {
+    width: 100%;
+    height: 100%; /* Faz com que a imagem ocupe 100% da altura */
+    object-fit: cover; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Aplica a mesma borda arredondada dos cartões */
+}

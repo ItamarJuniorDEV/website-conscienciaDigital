@@ -347,3 +347,59 @@ footer p {
     font-weight: bold;
     margin-bottom: 5px;
 }
+/* Casos de Repercussão */
+.section-bg-light {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.section-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #007bff;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.section-divider {
+    border-top: 2px solid #eaeaea;
+    margin: 30px 0;
+}
+
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .order-md-1, .order-md-2 {
+        order: initial;
+    }
+}
+
+.comment{
+    color:#007bff !important;
+}
